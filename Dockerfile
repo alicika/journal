@@ -15,7 +15,7 @@ RUN mkdir -p /workdir
 WORKDIR /workdir
 RUN dockerize -n  -o /workdir  /usr/bin/zola
 
-
-FROM scratch
-COPY --from=builder /workdir .
 ENTRYPOINT [ "/usr/bin/zola" ]
+RUN /bin/sh
+RUN mkdir blog
+RUN cd blog

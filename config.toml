@@ -1,11 +1,19 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://alicika.github.io/journal/"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+
+# hereby continues optional attributes inserted by the user
+theme = "juice"
+
+taxonomies = [
+    {name = "categories", rss = false},
+    {name = "tags", rss = false},
+]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -14,3 +22,4 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
+zola_version = "Zola v0.13.0"

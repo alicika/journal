@@ -1,4 +1,4 @@
-FROM rust:slim AS builder
+FROM rust:slim
 
 RUN apt-get update -y && \
   apt-get install -y python-pip make g++ python-setuptools libssl-dev pkg-config rsync && \

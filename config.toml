@@ -8,12 +8,12 @@ compile_sass = true
 build_search_index = true
 
 # hereby continues optional attributes inserted by the user
-theme = "juice"
+# theme =
 
-taxonomies = [
-    {name = "categories", rss = false},
-    {name = "tags", rss = false},
-]
+# taxonomies = [
+#    {name = "categories", rss = false},
+#    {name = "tags", rss = false},
+# ]
 
 [markdown]
 # Whether to do syntax highlighting

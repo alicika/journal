@@ -1,0 +1,16 @@
+name: build-and-deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/workflows/build-and-deploy
+        with:
+          zola_version: '0.13.0'
+          auth_token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          site_id: ${{ secrets.NETLIFY_SITE_ID }}
+          deploy_dir: 'public'

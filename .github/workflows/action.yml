@@ -13,7 +13,7 @@ inputs:
   zola_version:
     description: 'Version of zola to pull'
     required: true
-    default: '0.12.2'
+    default: '0.13.0'
 runs:
   using: 'docker'
   image: 'Dockerfile'

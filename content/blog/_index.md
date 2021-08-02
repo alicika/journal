@@ -5,4 +5,4 @@ template = "base.html"
 page_template = "blog/page.html"
 +++
 
-This is a sample with a minimum frontmatter.
+This is a sample page with a minimum frontmatter.

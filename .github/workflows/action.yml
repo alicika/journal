@@ -1,5 +1,4 @@
 name: build
-description: Build and deploy GitHub pages
 on:
   push:
     branches: [main]

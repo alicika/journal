@@ -1,24 +1,19 @@
-name: 'Build and deploy'
-description: 'Build site with Zola and deploy to Netlify'
-inputs:
-  auth_token:
-    description: 'Netlify auth token'
-    required: true
-  site_id:
-    description: 'Netlify site ID to deploy to'
-    required: true
-  deploy_dir:
-    description: 'Directory to deploy to netlify'
-    required: true
-  zola_version:
-    description: 'Version of zola to pull'
-    required: true
-    default: '0.13.0'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  env:
-    ZOLA_VERSION: ${{ inputs.zola_version }}
-    NETLIFY_AUTH_TOKEN: ${{ inputs.auth_token }}
-    NETLIFY_SITE_ID: ${{ inputs.site_id }}
-    NETLIFY_DEPLOY_DIR: ${{ inputs.deploy_dir }}
+name: build
+description: Build and deploy GitHub pages
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: build_and_deploy
+        uses: shalzz/zola-deploy-action@v0.13.0
+        env:
+          # Target branch
+          PAGES_BRANCH: main
+          # Provide personal access token
+          TOKEN: ${{ secrets.TOKEN }}

@@ -10,6 +10,5 @@ jobs:
         uses: shalzz/zola-deploy-action@1d42d36830353a145f297e9225b6f3c6f133bc46
         env:
           PAGES_BRANCH: gh-pages
-          BUILD_DIR: docs
           BUILD_FLAGS: --drafts
           TOKEN: ${{ secrets.TOKEN }}

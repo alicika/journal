@@ -65,7 +65,7 @@ title_addition = "Modern Documentation Theme"
 
 
 # Set date format in blog publish metadata
-timeformat = "%Y-%b-%e" # e.g. June 14, 2021
+timeformat = "%e-%b-%Y" # e.g. June 14, 2021
 timezone = "Asia/Tokyo"
 
 # Edit page on reposity or not

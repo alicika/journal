@@ -46,7 +46,7 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 author = "alicika"
-github = "https://github.com/aaranxu"
+github = "https://github.com/alicika"
 twitter = "https://twitter.com/ari_sika"
 email = "a@a.fr"
 
@@ -65,7 +65,7 @@ title_addition = "Modern Documentation Theme"
 
 
 # Set date format in blog publish metadata
-timeformat = "%Y-%M-%e" # e.g. June 14, 2021
+timeformat = "%Y-%b-%e" # e.g. June 14, 2021
 timezone = "Asia/Tokyo"
 
 # Edit page on reposity or not

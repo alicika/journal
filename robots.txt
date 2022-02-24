@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alicika.github.io/journal/sitemap.xml
